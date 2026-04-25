@@ -85,4 +85,4 @@ MIT
 ## クレジット
 
 Claude.ai 公式の statusLine 仕様（`rate_limits.five_hour` / `rate_limits.seven_day` 等）を利用しています。
-プロジェクト名は Flapmind（https://flapmind.com）に由来します。
+プロジェクト名は FLAP MIND（ https://flapmind.com ）に由来します。
