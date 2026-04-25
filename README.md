@@ -32,7 +32,19 @@ Weekly:  ███████████████░░░░░ [78%] ↻ 
   - Windows: `choco install jq` または `winget install jqlang.jq`
 - bash 4.x 以上（macOS 標準の bash でも動作）
 
-## インストール（1コマンド）
+## インストール
+
+### 方式A: ワンライナー（推奨）
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/michaelkei/flapmind-statusline/main/install.sh | bash
+```
+
+これだけで完了。最も手軽です。
+
+### 方式B: git clone + install.sh
+
+リポジトリの中身を確認してから入れたい・カスタマイズしてから入れたい場合：
 
 ```bash
 git clone https://github.com/michaelkei/flapmind-statusline.git
@@ -40,12 +52,15 @@ cd flapmind-statusline
 bash install.sh
 ```
 
-実行すると：
+---
+
+どちらの方式でも実行内容は同じ：
 
 1. `~/.claude/flapmind-statusline.sh` にスクリプトを配置
 2. `~/.claude/settings.json` の `statusLine` を書き換え（既存は `settings.json.bak` にバックアップ）
 
 **新しい Claude Code セッションを開くとステータスラインが反映されます。**
+（実行中のセッションは `/exit` で抜けてから `claude` で起動し直してください）
 
 ## 手動インストール
 
